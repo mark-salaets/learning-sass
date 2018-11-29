@@ -1,0 +1,59 @@
+/* comment visible in css*/
+.content {
+  width: 700px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  background-color: black;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav .brand {
+  width: auto;
+  color: #1720e3;
+}
+nav h1 {
+  margin: 0;
+  padding: 0;
+}
+nav .btn-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 10px;
+}
+nav .btn-group li {
+  list-style: none;
+}
+nav .btn-group .btn-primary {
+  background-color: #1720e3;
+  padding: 5px;
+}
+nav .btn-group .btn-primary a {
+  text-decoration: none;
+  color: #da8f6e;
+}
+nav .btn-group .btn-primary:hover {
+  background-color: #1219b5;
+}
+
+.now, .soon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+}
+.intro p {
+  color: #da8f6e;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
