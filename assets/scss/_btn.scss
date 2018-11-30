@@ -1,0 +1,15 @@
+@mixin back-to-top-btn {
+  border: 1px solid black;
+  background-color: $primary-color;
+  box-shadow: 3px 5px;
+  padding: 5px 10px 5px 10px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}

@@ -1,22 +1,31 @@
 //comment not visible in css
 
 /* comment visible in css*/
+@import "_btn.scss";
+@import "_test-grid.scss";
 
-$primary-color: rgb(23, 32, 227);
+$primary-color: rgb(13, 190, 163);
 $secondary-color: rgb(218, 143, 110);
+
+@mixin margin-auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
 
 .content {
   width: 700px;
   margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @include margin-auto;
 }
 
 nav {
-  background-color: black;
+  background-color: $secondary-color;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+
+  @include margin-auto;
 
   .brand {
     width: auto;
@@ -54,17 +63,28 @@ nav {
     }
   }
 }
+.now {
+  @include row();
+}
 
-.now,.soon {
-  display: flex;
-  justify-content: space-between;
+.soon {
+  @include row();
+}
+
+.film {
+  @include col(1,3);
 }
 
 .intro {
-  display: flex;
-  justify-content: space-between;
+  @include row();
+
   p {
+    @include col(1, 2);
     color: $secondary-color;
-    margin: 20px;
   }
+}
+
+.top-btn {
+  @include back-to-top-btn;
+  float: right;
 }
